@@ -1,8 +1,20 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
-import {  SubTitle } from '../components/common';
+import {  Button, Input, ErrorMessage, Form, SubIndex, PageCover, SubTitle } from '../components/common';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+
+const TEXTAREA = styled.textarea`
+  display: block;
+  width: 100%;
+  height: 8rem;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+`
 
 const CoverPic = styled.img`
   margin: 0;
@@ -11,7 +23,6 @@ const CoverPic = styled.img`
   height: 630px;
   object-fit: cover;
 `
-
 
 const SeeMore = styled.a`
   text-decoration: none;
@@ -211,6 +222,27 @@ const IndexPage = ({  }) => {
         </a>
       </div>
     
+      <SubTitle>
+      <span>
+         Contact
+      </span>
+    </SubTitle>
+      <Form name="contact" method="post" action="/contact_success" data-netlify="true" data-netlify-honeypot="bot-field">
+      <br></br>
+      <p>아래 폼에 필수 사항을 기입하여 문의해 주시기 바랍니다.</p>
+      <p>메일주소는 틀림없이 기입해 주시기 바랍니다.</p>
+      <br></br>
+        <input type="hidden" name="form-name" value="contact" />
+        <SubIndex>성함</SubIndex>            
+        <Input required placeholder="Name"  type="text" name="name" />
+        <SubIndex>제목</SubIndex>
+        <Input required placeholder="Title"  type="text" name="subject"/>
+        <SubIndex>EMAIL주소</SubIndex>
+        <Input required placeholder="Email"  type="email" name="email"/>
+        <SubIndex>문의내용</SubIndex>
+        <TEXTAREA required placeholder="Inquiry" name="inquiry"  />
+        <Button type="submit" block>보내기</Button>
+      </Form>
     <br></br>
     <br></br>
     <br></br>
