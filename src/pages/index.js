@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
-import {  Button, Input, ErrorMessage, Form, SubIndex, PageCover, SubTitle } from '../components/common';
+import {  Button, Input, Form, SubIndex, SubTitle } from '../components/common';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
@@ -81,7 +81,7 @@ const IndexPage = ({  }) => {
       >
         <SeeMore 
           href="/about"
-          >>>또 보기
+          >>>더 보기
         </SeeMore>
       </div>
     <SubTitle>
