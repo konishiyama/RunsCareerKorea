@@ -17,15 +17,25 @@ const ContactSuccess = () => {
             Success!!
           </span>
          </SubTitle>
-        <p>문의해 주신 내용이 정상적으로 송부되었습니다.</p>
-        {/* <p>通常、4営業日以内にお知らせいただいたメールアドレス宛にご回答いたしますが、万一返答のない場合は、お手数ですが再度お問い合わせいただくか、お電話でお問い合わせくださいますようお願いします。</p> */}
-        <br></br>
+        <p
+          style={{
+            textAlign: `center`
+          }}
+        >
+          문의해 주신 내용이 정상적으로 송부되었습니다.
+        </p>
         <br></br>
         <p
         style={{
-          textAlign: `center`
+          textAlign: `center`,
+          textDecoration: `none`,
         }}
-        ><a href="/">홈에 돌아가기</a></p>
+        ><a 
+          href="/"
+          style={{
+            textDecoration: `none`,
+          }}
+          >홈에 돌아가기</a></p>
         <br></br>
         <br></br>
     </div>

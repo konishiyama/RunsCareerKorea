@@ -4,7 +4,7 @@ import NavbarLinks from "./NavbarLinks"
 // import {FirebaseContext} from './Firebase';
 
 const Navigation = styled.nav`
-  height: 5vh;
+  height: 8vh;
   display: flex;
   background-color: #fff;
   position: relative;

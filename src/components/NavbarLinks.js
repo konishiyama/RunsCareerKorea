@@ -56,13 +56,13 @@ const Logout = styled.span`
     width: 0%;
     content: ".";
     color: transparent;
-    background: #4c9c41;
+    background: #0086d1;
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: #4c9c41;
+    color: #0086d1;
     ::after {
       width: 100%;
     }
