@@ -21,7 +21,7 @@ const About = () => {
           padding: `0 0.8rem 1.45rem`,
         }}
       >
-        <h1>RUNS CAREER란?</h1>
+        <h2>RUNS CAREER란?</h2>
         <p>
         RUNS CAREER는 한국에서 공부를 하면서도 일본에서 취업활동을 고려하고 있는 모든 분들을 위한 정보공유 커뮤니티·지원조직입니다.
         </p>

@@ -5,7 +5,7 @@ export const SubTitle = styled.div`
   text-align: center;
 
   span{
-    font-family: Avenir Next Condensed;
+    font-family: 'Nanum Myeongjo', serif !important;
     font-weight: 200;
     letter-spacing: 0.03em;
     font-size: 25px;

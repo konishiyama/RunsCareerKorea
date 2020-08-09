@@ -42,6 +42,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  font-family: 'Nanum Myeongjo', serif !important;
 }
 a:active,
 a:hover {
@@ -63,6 +64,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  font-family: 'Nanum Myeongjo', serif !important;
 }
 mark {
   background-color: #ff0;
@@ -253,6 +255,7 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  font-family: 'Nanum Myeongjo', serif !important;
 }
 h3 {
   margin-left: 0;
@@ -385,6 +388,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-family: 'Nanum Myeongjo', serif !important;
 }
 figure {
   margin-left: 0;
