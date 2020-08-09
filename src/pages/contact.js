@@ -37,15 +37,15 @@ const About = () => {
       >
       <Form name="contact" method="post" action="/contact_success" data-netlify="true" data-netlify-honeypot="bot-field">
       <br></br>
-      <p>필수 사항을 기입한 후 문의해 주시기 바랍니다.메일주소는 틀림없이 기입하여 주시기 바랍니다.</p>
+      <p>필수 사항을 기입한 후 보내주시기 바랍니다.메일주소는 틀림없이 기입하여 주시기 바랍니다.</p>
       <br></br>
         <input type="hidden" name="form-name" value="contact" />
         <SubIndex>성함</SubIndex>            
         <Input required placeholder="성함"  type="text" name="name" />
         <SubIndex>제목</SubIndex>
         <Input required placeholder="제목"  type="text" name="subject"/>
-        <SubIndex>EMAIL주소</SubIndex>
-        <Input required placeholder="EMAIL주소"  type="email" name="email"/>
+        <SubIndex>EMAIL</SubIndex>
+        <Input required placeholder="EMAIL"  type="email" name="email"/>
         <SubIndex>문의사항</SubIndex>
         <TEXTAREA required placeholder="문의사항" name="inquiry"  />
         <Button type="submit" block>보내기</Button>

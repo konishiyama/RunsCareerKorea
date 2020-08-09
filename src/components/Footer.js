@@ -117,7 +117,7 @@ const Footer = () => {
       </ImgContainer>
 
       <Paragraph2>
-        운용회사 : 주식회사 샹그릴라 코리아
+        운영회사 : 주식회사 샹그릴라 코리아
       </Paragraph2>
 
       <CopyRight>
