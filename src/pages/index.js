@@ -20,6 +20,45 @@ const CoverPic = styled.img`
   }
 `
 
+const Title = styled.span`
+  :before {
+    position: absolute;
+    top: 44%;
+    left: 23.5%;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 3vw;
+    background-color: #fff;
+  }
+
+  :after {
+    position: absolute;
+    top: 44%;
+    left: 76.5%;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 3vw;
+    background-color: #fff;
+  }
+
+  @media screen and (min-width: 481px) {
+    height: auto;
+    :before {
+      left: 36%;
+      width: 2vw;
+    }
+  
+    :after {
+      left: 62%;
+      width: 2vw;
+    }
+  }
+  @media screen and (min-width: 960px) {
+  }
+`
+
 const CoverText1 = styled.p`
   position: absolute;
   top: 24%;
@@ -69,23 +108,7 @@ const CoverText3 = styled.p`
   font-weight: bold;
   white-space: pre-wrap;
   text-align: center;
-  width: 18em;
-`
-const CoverText4 = styled.p`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-  color: #fff;
-  line-height: 1.8em;
-  font-size: 0.8em;
-  font-weight: bold;
-  white-space: pre-wrap;
-  text-align: center;
+  width: 25em;
 `
 
 const Caption = styled.p`
@@ -155,9 +178,10 @@ const IndexPage = ({  }) => {
     >
       <CoverPic src= "https://firebasestorage.googleapis.com/v0/b/runscareer-korea.appspot.com/o/coverImgSample_2.jpg?alt=media&token=b9ea46a1-3e7b-4f7a-8f15-0a140b497b0f" />
       <CoverText1>일본기업 취업지원</CoverText1>
-      <CoverText2>RUNS CAREER는 일본기업</CoverText2>
-      <CoverText3>취업을 목표로하시는 분들을 위한</CoverText3>
-      <CoverText4>교육 서비스를 제공합니다.</CoverText4>
+      <Title>
+        <CoverText2>RUNS CAREER</CoverText2>
+        <CoverText3>OFFICIAL WEBSITE</CoverText3>
+      </Title>
     </div>
     <div
         style={{
