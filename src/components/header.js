@@ -4,7 +4,7 @@ import NavbarLinks from "./NavbarLinks"
 // import {FirebaseContext} from './Firebase';
 
 const Navigation = styled.nav`
-  height: 10vh;
+  height: 5vh;
   display: flex;
   background-color: #fff;
   position: relative;
@@ -86,6 +86,19 @@ const Hamburger = styled.div`
     top: 8px;
   }
 `
+
+const LogoImage = styled.img`
+  height:30px;
+  width:30px;
+  object-fit: cover;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  border-radius: 50%;
+  position: absolute;
+  right: 5vw;
+`
+
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
@@ -110,23 +123,19 @@ const Header = () => {
           <NavbarLinks />
         </Navbox>
       )}
-
-      <a href="/"
-         style={{
-          margin:`0 0 0 0`,
-        }}
-      >
-        <img 
-          src="https://firebasestorage.googleapis.com/v0/b/runscareer-korea.appspot.com/o/RC%E3%83%AD%E3%82%B3%E3%82%99%EF%BC%88%E6%A8%AA%E3%83%BB%E8%83%8C%E6%99%AF%E3%81%AA%E3%81%97%EF%BC%89.png?alt=media&token=e009467e-0ab3-40ac-bf95-4181882b067f"
+      <div>
+        <a href="/"
           style={{
-            height:`8vw`,
-            marginBottom: `0`,
             display: `flex`,
-            alignItems: `center`
+            alignItems: `center`,
           }}
-          alt="image"
-        ></img>
-      </a>
+        >
+          <LogoImage 
+            src="https://firebasestorage.googleapis.com/v0/b/runscareer-korea.appspot.com/o/logo.png?alt=media&token=d2c66a5d-1840-4515-95e8-1d9d35924b25"
+            alt="image"
+          ></LogoImage>
+        </a>
+      </div>
     </Navigation>
     </>
   )

@@ -78,8 +78,9 @@ const NavbarLinks = () => {
 
   return (
     <>
-      <NavItem href="/about">About</NavItem>
-      <NavItem href="/blog">Blog</NavItem>
+      <NavItem href="/">HOME</NavItem>
+      <NavItem href="/about">ABOUT</NavItem>
+      <NavItem href="/contact">CONTACT</NavItem>
     </>
   )
 }

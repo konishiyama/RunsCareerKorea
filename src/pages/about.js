@@ -2,13 +2,12 @@ import React, { Children } from "react"
 import { PageCover } from '../components/common';
 
 
-
 const About = () => {
   return(
   <>
   <section>
     <PageCover>
-      <img src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fcoversample4.jpg?alt=media&token=05feeaeb-7485-4dc6-a470-6be86d173842"></img>
+      <img src="https://firebasestorage.googleapis.com/v0/b/runscareer-korea.appspot.com/o/coverimagesample_1%20(1).jpg?alt=media&token=a26b6d97-1db4-431a-9254-1ee01b0e1675"></img>
       <p>
         <span>
           ABOUT
@@ -18,7 +17,7 @@ const About = () => {
     <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: `90%`,
           padding: `0 0.8rem 1.45rem`,
         }}
       >
